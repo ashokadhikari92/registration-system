@@ -11,12 +11,12 @@ spring.thymeleaf.enabled=true
 server.port=3600
 ```
 
-- [ ] Add properties to configure your database. We have used AWS cloud platform to host our database server,  if you want to user that, you can use following credientials.
+- [ ] Add properties to configure your database. 
 
 ```			
-spring.datasource.url=jdbc:mysql://registrationsystem.cctn4agw5hyx.us-east-2.rds.amazonaws.com:3306/registrationsystem?useSSL=false
-spring.datasource.username=root
-spring.datasource.password=root2018
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 spring.jpa.hibernate.ddl-auto=update
 ```
@@ -59,12 +59,6 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 It was a nice team work experience, we learned lots of things. 
 Below are few of the significant contributions of each member.
 	
-#### Amanuel Bekele 
-1. Configured Spring security (login/ logout/ register/ authorize users based url and method)
-2. Provided a REST API for student. which include fetching courses, prerequisites, wavers.
-3. Implemented add preferences functionality.
-4. Other business logics in service layer.
-
 #### Ashok Adhikari 
 	
 1. Analyzed the functional requirements and possible use cases
@@ -73,6 +67,14 @@ Below are few of the significant contributions of each member.
 4. Validated forms using Hibernate Validator and also created custom validation annotation.
 5. Also Implemented features for student user such as displaying available courses, enrolled courses
 6. Implemented internationalization feature in student module in admin dashboard.
+
+
+#### Amanuel Bekele 
+1. Configured Spring security (login/ logout/ register/ authorize users based url and method)
+2. Provided a REST API for student. which include fetching courses, prerequisites, wavers.
+3. Implemented add preferences functionality.
+4. Other business logics in service layer.
+
 
 #### Duesdedit Lutwama 
 
