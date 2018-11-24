@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Admin Page!</h1>
+
+
+<div sec:authorize="isAuthenticated()">
+    This content is only shown to authenticated users.
+</div>
+
+WELCOME: <span sec:authentication="name">user name</span>
+Roles: <span sec:authentication="principal.authorities">roles</span>
+
+<div sec:authorize="hasRole('ADMIN')">
+    This content is only shown to admins.
+</div>
+
+<form action="#" method="post" th:action="@{/logout}">
+    <p><input type="submit" value="log out"></p>
+</form>
+</body>
+</html>
